@@ -8,9 +8,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
     resolve: {
       alias: {
-        '@components': './src/components',
-        '@pages': './src/pages',
-        '@styles': './src/styles',
+        '@': '../',
       },
     },
   },
