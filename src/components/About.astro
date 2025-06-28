@@ -2,11 +2,11 @@
 import AboutIcon from "@/assets/abouticon.svg";
 ---
 
-<div class="flex flex-col gap-20" id="about">
+<div class="flex flex-col gap-10" id="about">
   <h1 class="text-5xl font-bold text-center">¿Quiénes somos?</h1>
-  <div class="grid grid-cols-2 max-w-[70%] m-auto">
-    <AboutIcon />
-    <p class="text-2xl text-gray-900 text-justify">
+  <div class="grid grid-cols-1 sm:grid-cols-2 max-w-[90%] md:max-w-[90%] xl:max-w-[80%] m-auto gap-10">
+    <AboutIcon class="p-5 w-full hidden sm:block" />
+    <p class="md:text-base lg:text-2xl text-gray-900 text-justify">
       En <strong>Tiyay Digital Group</strong> creemos en la tecnología como puente
       entre las marcas y las personas. <br /><br />Somos un equipo apasionado
       por el diseño y desarrollo de soluciones digitales que generan impacto
@@ -14,7 +14,7 @@ import AboutIcon from "@/assets/abouticon.svg";
       construyendo relaciones de confianza y éxito.
     </p>
   </div>
-  <div class="flex justify-center mt-10">
+  <div class="flex justify-center">
     <a
       href="#"
       class="bg-gradient-to-r from-[#7197D9] to-[#71D9D9] px-15 py-3 rounded-2xl font-bold pointer inline-block text-white"

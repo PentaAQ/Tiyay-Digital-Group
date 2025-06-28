@@ -3,13 +3,14 @@ import LogoTiyay from "../assets/logoTiyay.svg";
 ---
 
 <div
-  class="w-full flex items-center justify-evenly py-2 bg-[#ffffffa1] backdrop-blur-md fixed top-0 z-50"
+  class="w-full flex items-center justify-between lg:justify-evenly py-2 bg-[#ffffffa1] backdrop-blur-md fixed top-0 z-50 px-4 lg:px-0"
 >
   <a href="/" class="flex items-center gap-2">
     <LogoTiyay class="h-13 w-13" />
     <h1 class="text-3xl font-bold">Tiyay Digital Group</h1>
   </a>
-  <div class="flex items-center gap-10">
+  <button class="sm:block lg:hidden cursor-pointer text-3xl" id="btn"><ion-icon name="menu-outline"></ion-icon></button>
+  <div class="items-center lg:gap-10 lg:flex hidden absolute lg:relative right-0 top-20 lg:top-0 bg-white lg:bg-transparent lg:w-auto lg:p-0  p-5 rounded-2xl shadow-2xl" id="navbar">
     <a href="#services" class="group"
       >Servicios
       <span class=""></span></a
@@ -29,7 +30,15 @@ import LogoTiyay from "../assets/logoTiyay.svg";
   </div>
 </div>
 
-<script></script>
+<script>
+  const navbar = document.querySelector('#navbar')
+  const btn = document.querySelector('#btn')
+
+  btn?.addEventListener('click',()=>{
+    navbar?.classList.toggle('hidden')
+    navbar?.classList.toggle('grid')
+  })
+</script>
 
 <style>
   @reference "@/styles/global.css";

@@ -7,7 +7,7 @@ import LineHero from "./LineHero.astro";
 ---
 
 <div class="flex flex-col mt-10">
-  <div class="pl-4 sm:pl-6 md:pl-10 lg:pl-70 xl:pl-70 mb-10">
+  <div class="pl-4 lg:pl-25 xl:pl-45 mb-10">
     <h1 class="text-5xl font-extrabold mb-5">
       Impulsa tu <span
         class="bg-gradient-to-r from-[#7197D9] to-[#71d9d9] bg-clip-text text-transparent"
@@ -28,21 +28,21 @@ import LineHero from "./LineHero.astro";
 
   <div class="relative">
     <LineHero variant={true}>
-      <IconFast class='h-full ml-65'/>
+      <IconFast class='h-full lg:ml-25 xl:ml-45'/>
       <p><b>Rápida</b> implementación</p>
     </LineHero>
 
     <LineHero variant={false}>
-      <IconDesign class="h-full ml-150 "/>
+      <IconDesign class="h-full ml-45 md:ml-50 lg:ml-80 xl:ml-120 "/>
       <p>Diseño <b>único</b></p>
     </LineHero>
 
     <LineHero variant={true}>
-      <IconSecurity class="h-full ml-65" />
+      <IconSecurity class="h-full lg:ml-25 xl:ml-45" />
       <p><b>Seguridad</b> garantizada</p>
     </LineHero>
 
-    <div class="absolute bottom-0 right-70 h-[140%]">
+    <div class="absolute bottom-0 md:right-5 lg:right-15 xl:right-30 md:h-[120%] lg:h-[140%] hidden sm:block">
       <HeroIcon class="w-full h-full" />
     </div>
   </div>
@@ -54,7 +54,7 @@ import LineHero from "./LineHero.astro";
       >¡Comienza ahora!</a
     >
   </div>
-  <a class="fixed bottom-5 right-5" href="#">
+  <a class="fixed bottom-5 right-5 z-50" href="#">
     <ion-icon name="logo-whatsapp" class="max-w-15 max-h-15 text-white text-5xl bg-[#25D366] p-2 rounded-full"></ion-icon>
   </a>
 </div>

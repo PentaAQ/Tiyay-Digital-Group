@@ -7,15 +7,34 @@ interface Props {
 const { variant = false, children } = Astro.props;
 ---
 
-<div
-  class="w-full py-2.5 flex items-center"
-  style="mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%)"
->
+<div class="w-full py-2.5 flex items-center mascara-md">
   <div
-    class="w-full [box-shadow:0px_2px_7px_#000000] bg-[linear-gradient(45deg,white_0%,#71D9D9_25%,#7197D9_75%,white_100%)]"
+    class="w-full [box-shadow:0px_2px_7px_#000000] bg-gradient-to-r from-[#71D9D9] to-[#7197d9] lg:bg-[linear-gradient(45deg,white_0%,#71D9D9_25%,#7197D9_75%,white_100%)]"
   >
     <div class="w-full h-15 flex items-center">
       <slot />
     </div>
   </div>
 </div>
+
+<style>
+  @@media (min-width: 768px) {
+  .mascara-md {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+</style>

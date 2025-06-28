@@ -8,58 +8,58 @@ import LuxurisIcon from '@/assets/LuxurisDental.png'
 ---
 
 <div class="flex flex-col  items-center space-y-6" id="projects">
-  <h1 class="text-center text-6xl font-bold">
+  <h1 class="text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
     Descubre <strong
       class="bg-gradient-to-r from-[#71D9D9] to-[#7197D9] bg-clip-text text-transparent"
       >nuestros proyectos</strong
-    ><br />
+    ><br class="hidden sm:block" />
     más recientes
   </h1>
 
-  <div class="flex gap-8 mt-10">
-    <div class="flex flex-col gap-2">
+  <div class="flex md:gap-10 lg:gap-20 mt-10 justify-center">
+    <div class="flex flex-col gap-2 items-center md:w-10">
       <a href="https://www.udemy.com/" target="iframe">
-        <Image src={FinanceIcon} alt={"Logo de Rampal Contadores"} />
+        <Image src={FinanceIcon} alt={"Logo de Rampal Contadores"}/>
       </a>
       <h2 class="text-center text-xs">Finance Class</h2>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 items-center md:w-10">
       <a href="https://www.rampalcontadores.com/" target="iframe">
         <Image src={RampalIcon} alt={"Logo de Rampal Contadores"} />
       </a>
       <h2 class="text-center text-xs">Rampal</h2>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 items-center md:w-10">
       <a href="https://www.arnoldchrist.com/" target="iframe">
         <Image src={ArnoldIcon} alt={"Logo de Rampal Contadores"} />
       </a>
       <h2 class="text-center text-xs">Arnold Christ</h2>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 items-center md:w-10">
       <a href="https://www.luxurisdental.com/" target="iframe">
         <Image src={LuxurisIcon} alt={"Logo de Rampal Contadores"} />
       </a>
       <h2 class="text-center text-xs">Luxuris Dental</h2>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 items-center md:w-10">
       <a href="https://www.udemy.com/" target="iframe">
         <Image src={FinanceIcon} alt={"Logo de Rampal Contadores"} />
       </a>
       <h2 class="text-center text-xs">Finance Class</h2>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 items-center md:w-10">
       <a href="https://www.rampalcontadores.com/" target="iframe">
         <Image src={RampalIcon} alt={"Logo de Rampal Contadores"} />
       </a>
       <h2 class="text-center text-xs">Rampal</h2>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 items-center md:w-10">
       <a href="https://www.arnoldchrist.com/" target="iframe">
         <Image src={ArnoldIcon} alt={"Logo de Rampal Contadores"} />
       </a>
       <h2 class="text-center text-xs">Arnold Christ</h2>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 items-center md:w-10">
       <a href="https://www.luxurisdental.com/" target="iframe">
         <Image src={LuxurisIcon} alt={"Logo de Rampal Contadores"} />
       </a>
@@ -68,7 +68,7 @@ import LuxurisIcon from '@/assets/LuxurisDental.png'
     
   </div>
 
-  <iframe name="iframe"  src="https://www.luxurisdental.com/" class="rounded-2xl w-[60%] h-[600px]">
+  <iframe name="iframe"  src="https://www.luxurisdental.com/" class="rounded-2xl w-[80%] xl:w-[60%] h-[500px] md:h-[400px] lg:h-[500px] xl:h-[500px] shadow mt-10">
 
   </iframe>
 </div>
@@ -76,6 +76,6 @@ import LuxurisIcon from '@/assets/LuxurisDental.png'
 <style>
   @reference "@/styles/global.css";
   a {
-    @apply bg-[#71D9D9] w-20 h-20 p-2 rounded-md flex items-center justify-center hover:scale-110 transition-transform duration-300;
+    @apply bg-[#71D9D9] md:w-15 md:h-15 lg:w-20 lg:h-20 p-2 rounded-md flex items-center justify-center hover:scale-110 transition-transform duration-300;
   }
 </style>

@@ -3,15 +3,15 @@ import ContactIcon from "@/assets/contacticon.svg";
 ---
 
 <div>
-  <h1 class="text-center text-5xl font-extrabold leading-15 " id="contact">
-    Contáctanos y transforma <br> <span
+  <h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-extrabold lg:leading-15 " id="contact">
+    Contáctanos y transforma <br class="hidden sm:block"> <span
       class="bg-gradient-to-r from-[#7197D9] to-[#71d9d9] bg-clip-text text-transparent "
       >tu idea</span
     > en realidad
   </h1>
-  <div class="grid grid-cols-2 max-w-[60%] m-auto mt-10 border-[#71d9d9] border-3 rounded-2xl p-5 gap-5">
-    <ContactIcon class="m-auto w-[90%] h-[90%]"/>
-    <form action="" class="w-[80%] my-auto flex flex-col gap-2">
+  <div class="grid sm:grid-cols-1 lg:grid-cols-2 max-w-[90%] lg:max-w-[80%] xl:max-w-[70%] m-auto mt-10 border-[#71d9d9] border-3 rounded-2xl p-5 gap-5">
+    <ContactIcon class="m-auto w-[90%] h-[90%] hidden lg:block"/>
+    <form action="" class="w-[99%] sm:w-[80%] my-auto grid md:grid-cols-2 lg:grid-cols-1 gap-2 mx-auto">
         <div class="flex flex-col w-full">
             <label for="username">Nombre y Apellido</label>
             <input type="text" id="username" class="border border-[#71d9d9] rounded">
@@ -28,11 +28,11 @@ import ContactIcon from "@/assets/contacticon.svg";
             <label for="matter">Asunto</label>
             <input type="text" id="matter" class="border border-[#71d9d9] rounded">
         </div>
-        <div class="flex flex-col w-full">
+        <div class="flex flex-col w-full sm:col-span-2">
             <label for="phone">Comentario</label>
             <textarea name="phone" id="phone" rows="5" cols="20" class="border border-[#71d9d9] rounded"></textarea>
         </div>
-        <button type="submit" class="bg-[#71d9d9] w-full rounded">Submit</button>
+        <button type="submit" class="bg-[#71d9d9] w-full rounded sm:col-span-2  sm:py-2 font-bold text-white tracking-widest">Enviar</button>
 
     </form>
   </div>
