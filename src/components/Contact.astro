@@ -1,0 +1,39 @@
+---
+import ContactIcon from "@/assets/contacticon.svg";
+---
+
+<div>
+  <h1 class="text-center text-5xl font-extrabold leading-15 " id="contact">
+    Contáctanos y transforma <br> <span
+      class="bg-gradient-to-r from-[#7197D9] to-[#71d9d9] bg-clip-text text-transparent "
+      >tu idea</span
+    > en realidad
+  </h1>
+  <div class="grid grid-cols-2 max-w-[60%] m-auto mt-10 border-[#71d9d9] border-3 rounded-2xl p-5 gap-5">
+    <ContactIcon class="m-auto w-[90%] h-[90%]"/>
+    <form action="" class="w-[80%] my-auto flex flex-col gap-2">
+        <div class="flex flex-col w-full">
+            <label for="username">Nombre y Apellido</label>
+            <input type="text" id="username" class="border border-[#71d9d9] rounded">
+        </div>
+        <div class="flex flex-col w-full">
+            <label for="email">correo</label>
+            <input type="email" id="email" class="border border-[#71d9d9] rounded">
+        </div>
+        <div class="flex flex-col w-full">
+            <label for="phone">Telefono</label>
+            <input type="tel" id="phone" class="border border-[#71d9d9] rounded">
+        </div>
+        <div class="flex flex-col w-full">
+            <label for="matter">Asunto</label>
+            <input type="text" id="matter" class="border border-[#71d9d9] rounded">
+        </div>
+        <div class="flex flex-col w-full">
+            <label for="phone">Comentario</label>
+            <textarea name="phone" id="phone" rows="5" cols="20" class="border border-[#71d9d9] rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-[#71d9d9] w-full rounded">Submit</button>
+
+    </form>
+  </div>
+</div>

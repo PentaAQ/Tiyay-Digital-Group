@@ -3,10 +3,11 @@ import IconFast from "../assets/fast-icon.svg";
 import IconSecurity from "../assets/security-icon.svg";
 import IconDesign from "../assets/design-icon.svg";
 import HeroIcon from "../assets/hero-icon.svg";
+import LineHero from "./LineHero.astro";
 ---
 
-<div class="flex flex-col justify-center h-screen">
-  <div class="pl-4 sm:pl-6 md:pl-10 lg:pl-70 xl:pl-60 mb-10">
+<div class="flex flex-col mt-10">
+  <div class="pl-4 sm:pl-6 md:pl-10 lg:pl-70 xl:pl-70 mb-10">
     <h1 class="text-5xl font-extrabold mb-5">
       Impulsa tu <span
         class="bg-gradient-to-r from-[#7197D9] to-[#71d9d9] bg-clip-text text-transparent"
@@ -26,27 +27,21 @@ import HeroIcon from "../assets/hero-icon.svg";
   </div>
 
   <div class="relative">
-    <div
-      class="w-screen h-15 mb-5 flex items-center lg:pl-55 [box-shadow:0px_2px_7px_#000000] pl-10"
-      style="background: linear-gradient(to right, white 0%, #71D9D9 25%, #7197D9 75%, white 100%);"
-    >
-      <IconFast class="h-full mr-2" />
+    <LineHero variant={true}>
+      <IconFast class='h-full ml-65'/>
       <p><b>Rápida</b> implementación</p>
-    </div>
-    <div
-      class="w-screen h-13 mb-5 flex items-center pl-140 [box-shadow:0px_2px_7px_#000000]"
-      style="background: linear-gradient(to right, white 0%, #7197D9 25%, #71D9D9 75%, white 100%);"
-    >
-      <IconDesign class="h-full mr-2" />
+    </LineHero>
+
+    <LineHero variant={false}>
+      <IconDesign class="h-full ml-150 "/>
       <p>Diseño <b>único</b></p>
-    </div>
-    <div
-      class="w-screen h-15 mb-5 flex items-center pl-55 [box-shadow:0px_2px_7px_#000000]"
-      style="background: linear-gradient(to right, white 0%, #71D9D9 25%, #7197D9 75%, white 100%);"
-    >
-      <IconSecurity class="h-full mr-2" />
+    </LineHero>
+
+    <LineHero variant={true}>
+      <IconSecurity class="h-full ml-65" />
       <p><b>Seguridad</b> garantizada</p>
-    </div>
+    </LineHero>
+
     <div class="absolute bottom-0 right-70 h-[140%]">
       <HeroIcon class="w-full h-full" />
     </div>
@@ -54,10 +49,12 @@ import HeroIcon from "../assets/hero-icon.svg";
 
   <div class="flex justify-center mt-10">
     <a
-    href="#"
-    class="bg-gradient-to-r from-[#7197D9] to-[#71D9D9] px-6 py-3 rounded-2xl font-bold pointer inline-block"
-    >¡Comienza ahora!</a
-  >
+      href="#"
+      class="bg-gradient-to-r from-[#7197D9] to-[#71D9D9] px-6 py-3 rounded-2xl font-bold pointer inline-block"
+      >¡Comienza ahora!</a
+    >
   </div>
-  
+  <a class="fixed bottom-5 right-5" href="#">
+    <ion-icon name="logo-whatsapp" class="max-w-15 max-h-15 text-white text-5xl bg-[#25D366] p-2 rounded-full"></ion-icon>
+  </a>
 </div>

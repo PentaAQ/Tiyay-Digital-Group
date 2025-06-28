@@ -9,7 +9,9 @@ import './src/styles/global.css'
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<title>Tiyay Digital Group</title>
 	</head>
 	<body>
 		<slot />
@@ -19,6 +21,7 @@ import './src/styles/global.css'
 <style is:global>
 	html,
 	body {
+		scroll-behavior: smooth;
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
